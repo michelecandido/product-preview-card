@@ -1,0 +1,83 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url(./fonts/montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url(./fonts/montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url(./fonts/fraunces/static/Fraunces_72pt-Bold.ttf);
+}
+
+/* GENERAL */
+
+body {
+    font-size: 100%;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Fraunces';
+    color: hsl(212, 21%, 14%);
+}
+
+p, s {
+    font-family: 'MontserratMedium';
+    color: hsl(228, 12%, 48%);
+    font-size: 1em;
+}
+
+button {
+    font-family: 'MontserratBold';
+}
+
+.price {
+    font-family: 'Fraunces';
+    font-size: 2em;
+    color: hsl(158, 36%, 37%);
+}
+
+/* IMAGES */
+.container {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column {
+    height: 300px;
+}
+
+.column:nth-child(2) {
+    padding: 20px;
+}
+
+/* UTILITIES */
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+    }
+}
+*/
