@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap');
+
+/* colors */
+$green-500: hsl(158, 36%, 37%);
+$green-700: hsl(158, 42%, 18%);
+$black: hsl(212, 21%, 14%);
+$grey: hsl(228, 12%, 48%);
+$cream: hsl(30, 38%, 92%);
+$white: hsl(0, 0%, 100%);
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: $cream;
+}
+
+.card {
+    width: 50%;
+    display: flex;
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &__content {
+        padding: 2rem;
+    }
+
+    &__img img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    &__subtitle {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+}
+
+.card__price {
+    &-new {
+        font-size: 2em;
+        font-family: 'Fraunces';
+        color: $green-500;
+    }
+
+    &-old {
+        text-decoration: line-through;
+    }
+}
+
+p, span {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: $grey;
+}
+
+h1 {
+    font-family: 'Fraunces';
+    color: $black;
+}
+
+/* button */
+.card__btn {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: $white;
+}
