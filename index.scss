@@ -74,7 +74,19 @@ h1 {
 
 /* button */
 .card__btn {
+    width: 100%;
+    padding: 1em 0 1em 0;
+
     font-family: 'Montserrat';
     font-weight: 700;
     color: $white;
+
+    background-color: $green-500;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: $green-700;
+    }
 }

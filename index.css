@@ -60,7 +60,16 @@ h1 {
 
 /* button */
 .card__btn {
+  width: 100%;
+  padding: 1em 0 1em 0;
   font-family: "Montserrat";
   font-weight: 700;
   color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+.card__btn:hover {
+  background-color: hsl(158, 42%, 18%);
 }/*# sourceMappingURL=index.css.map */
