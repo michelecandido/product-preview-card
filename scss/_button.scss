@@ -1,0 +1,25 @@
+/* button */
+.card__btn {
+    width: 100%;
+    padding: 1.2em 0 1.2em 0;
+
+    background-color: $green-500;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: $green-700;
+    }
+
+    &-text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: $white;
+    padding-left: 0.5rem;
+    }
+
+    img, span {
+        vertical-align: middle;
+    }
+}
